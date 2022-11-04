@@ -51,19 +51,17 @@ return(
   validationSchema={Part1Modal}
   // console.log(onSubmit)
 
-  onSubmit={(values,action, { setSubmitting, resetForm }) => {
+  onSubmit={(values, { setSubmitting, resetForm }) => {
     setSubmitting(true);
-    
   setTimeout(() => {
- resetForm();
  setSubmitting(false);
  setUpdate(values)
  let payload = {
-    sub: values.sub,
-    fa_num: values.fa_num,
-    ba_num:values.ba_num,
-    oral_num1:values.oral_num1,
-    oral_num2:values.oral_num2
+    sub: values.sub.label,
+    fa_num: values.FA_num,
+    ba_num:values.BA_num,
+    oral_num1:values.Oral_num1,
+    oral_num2:values.Oral_num2
   };
 
   const updateData=()=>{
@@ -79,11 +77,10 @@ return(
         console.log(error);
     });
   }
-  updateData()
-    alert("data edit")
-    action.resetForm();
-
-  }, 500);
+  updateData();
+  alert("data edit")
+  resetForm();
+     }, 500);
   }}
 >
     

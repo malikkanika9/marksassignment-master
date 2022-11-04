@@ -154,7 +154,7 @@ return(
     
     {/* <td><FaUserEdit onClick={handleShow}/></td> */}
     
-    <td><UpdateModel stuId={el.stu_id}/> </td>
+    <td><UpdateModel stuId={el.id}/> </td>
 </tr>
 
       ))}
