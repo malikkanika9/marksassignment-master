@@ -122,10 +122,7 @@ return(
         show={show}
         onHide={handleClose}
         backdrop="static"
-        keyboard={false}
-
-       
-      >
+        keyboard={false}      >
         <Modal.Header closeButton>
           <Modal.Title>Student Result Details</Modal.Title>
         </Modal.Header>
