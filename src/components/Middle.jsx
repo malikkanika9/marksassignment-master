@@ -123,12 +123,14 @@ return(
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+
+       
       >
         <Modal.Header closeButton>
           <Modal.Title>Student Result Details</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-        <table  class="table">
+        <Modal.Body  style={{width:"500px"}}>
+        <table  class="table" >
 <thead  style={{color:"#4b6cb7"}}>
 <tr>
 <th  scope="col"> Subject </th>
